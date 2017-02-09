@@ -6,7 +6,7 @@ import csv
 import threading
 import numpy as np
 
-class newPlotter:
+class Plotter:
     controlTime = 0.0
     currentAngle = 0.0
     currentLoad = 0.0

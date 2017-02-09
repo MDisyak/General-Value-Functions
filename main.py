@@ -1,9 +1,10 @@
 #Author: Michael Disyak
-# Implements a behaviour policy and a uses a general value function (GVF) to make predictions about various signals
+# Implements a behaviour policy and a uses a general value function (GVF) to make predictions about various signals.
+#This file also utilized Plotter class to plot the data coming from the GVF
 
 from lib_robotis_hack import *
 import myLib as myLib
-import newPlotter as plotter
+import Plotter as plotter
 import threading
 import random
 random.seed(0)
@@ -29,7 +30,7 @@ numberOfLearningSteps = 0
 pastAngle = 0.0
 
 gvf = GVF.GenValFunc(numTilings, numTiles, numTilesTotal, gamma, lamb, alpha) #numtilings, numtiles, gamma, lambda, alpha
-myPlotter = plotter.newPlotter(gvf)
+myPlotter = plotter.Plotter(gvf)
 myPlotter.s1 = s1
 myPlotter.s2 = s2
 

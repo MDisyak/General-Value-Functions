@@ -1,3 +1,8 @@
+#Written by Michael Disyak - Feb 2017
+#This class represents a general value function and has the ability to
+# recieve updates to relevant incoming data streams and learn using TD(lambda) and GTD(lambda) algorithms
+#  This class is designed to be used in conjunction with the Plotter class and a control file that implements a behaviour policy
+
 import numpy as np
 import time
 import math
